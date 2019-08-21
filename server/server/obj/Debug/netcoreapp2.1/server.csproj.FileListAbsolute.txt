@@ -1,0 +1,14 @@
+C:\Users\varshesh\Desktop\signalr_diff_sync\server\server\bin\Debug\netcoreapp2.1\server.deps.json
+C:\Users\varshesh\Desktop\signalr_diff_sync\server\server\bin\Debug\netcoreapp2.1\server.runtimeconfig.json
+C:\Users\varshesh\Desktop\signalr_diff_sync\server\server\bin\Debug\netcoreapp2.1\server.runtimeconfig.dev.json
+C:\Users\varshesh\Desktop\signalr_diff_sync\server\server\bin\Debug\netcoreapp2.1\server.dll
+C:\Users\varshesh\Desktop\signalr_diff_sync\server\server\obj\Debug\netcoreapp2.1\server.csprojAssemblyReference.cache
+C:\Users\varshesh\Desktop\signalr_diff_sync\server\server\obj\Debug\netcoreapp2.1\server.csproj.CoreCompileInputs.cache
+C:\Users\varshesh\Desktop\signalr_diff_sync\server\server\obj\Debug\netcoreapp2.1\server.RazorAssemblyInfo.cache
+C:\Users\varshesh\Desktop\signalr_diff_sync\server\server\obj\Debug\netcoreapp2.1\server.RazorAssemblyInfo.cs
+C:\Users\varshesh\Desktop\signalr_diff_sync\server\server\obj\Debug\netcoreapp2.1\server.AssemblyInfoInputs.cache
+C:\Users\varshesh\Desktop\signalr_diff_sync\server\server\obj\Debug\netcoreapp2.1\server.AssemblyInfo.cs
+C:\Users\varshesh\Desktop\signalr_diff_sync\server\server\obj\Debug\netcoreapp2.1\server.RazorTargetAssemblyInfo.cache
+C:\Users\varshesh\Desktop\signalr_diff_sync\server\server\bin\Debug\netcoreapp2.1\server.pdb
+C:\Users\varshesh\Desktop\signalr_diff_sync\server\server\obj\Debug\netcoreapp2.1\server.dll
+C:\Users\varshesh\Desktop\signalr_diff_sync\server\server\obj\Debug\netcoreapp2.1\server.pdb

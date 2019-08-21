@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'theme.scss';
+@import 'inputs.scss';
+@import 'buttons.scss';
+@import 'text';
+@import "overlay";
+@import "modal";
+
+//reset styles
+html,
+body,
+ul,
+p,
+ol {
+  margin:  0;
+  padding: 0;
+}
+
+// main styles
+body {
+  background-color: $bgColor;
+}
+
+.horizontal-separator {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 25px;
+  height: 2px;
+  width: 100%;
+  background: $rainbowLinearGradient;
+}

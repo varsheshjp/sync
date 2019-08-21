@@ -1,0 +1,16 @@
+.main-panel-container {
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+
+  .main-panel-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .main-panel-right-row {
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: 1fr 1fr 2fr;
+    }
+  }
+}

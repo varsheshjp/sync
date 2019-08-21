@@ -1,0 +1,67 @@
+@import "../../assets/scss/theme";
+
+.palette-tabs-selector {
+  display: block;
+  padding-top: 7px;
+  width: 100%;
+}
+
+.red-tab-title {
+  font-size: large;
+  padding: 3px 3px 3px 3px;
+  color: $white;
+  float: left;
+  width: auto;
+  border: 1px solid $lightGrey;
+  transition: all 0.5s;
+  background-color: #d50000;
+}
+
+.pink-tab-title {
+  @extend .red-tab-title;
+  background-color: #c51162;
+}
+
+.purple-tab-title {
+  @extend .red-tab-title;
+  background-color: #aa00ff;
+}
+
+.deep-purple-tab-title {
+  @extend .red-tab-title;
+  background-color: #6200ea;
+}
+
+.indigo-tab-title {
+  @extend .red-tab-title;
+  background-color: #304ffe;
+}
+
+.active-tab-title {
+  opacity: 0.5;
+}
+
+.default-modal-content {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.tab-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 7px;
+
+  div {
+    div {
+      width: 100%;
+      height: 30px;
+    }
+  }
+}
+
+.palette-tabs {
+  float: left;
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+}

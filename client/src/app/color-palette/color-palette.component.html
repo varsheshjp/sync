@@ -1,0 +1,66 @@
+<div class="overlay" (click)="overlayClick($event)">
+  <div class="default-modal-wrapper">
+    <div class="default-modal">
+      <div class="default-modal-title">
+        <p class="no-select">Выбор цвета</p>
+        <button class="exit-button" (click)="exit($event)">X</button>
+      </div>
+      <div class="horizontal-separator"></div>
+      <div class="default-modal-content">
+        <p class="no-select">Выберите цвет из предложенных вариантов или придумайте свой</p>
+
+        <div class="palette-tabs-selector">
+          <div class="tab-selector"
+               [ngClass]="currentTabView === 'red' ? 'active-tab-title': ''"
+               (click)="tabManager('red')">
+            <p class="no-select red-tab-title">Красные</p>
+          </div>
+          <div class="tab-selector"
+               [ngClass]="currentTabView === 'pink' ? 'active-tab-title': ''"
+               (click)="tabManager('pink')">
+            <p class="no-select pink-tab-title">Розовые</p>
+          </div>
+          <div class="tab-selector"
+               [ngClass]="currentTabView === 'purple' ? 'active-tab-title': ''"
+               (click)="tabManager('purple')">
+            <p class="no-select purple-tab-title">Пурпурные</p>
+          </div>
+          <div class="tab-selector"
+               [ngClass]="currentTabView === 'd-purple' ? 'active-tab-title': ''"
+               (click)="tabManager('d-purple')">
+            <p class="no-select deep-purple-tab-title">Тёмно-фиолетовые</p>
+          </div>
+          <div class="tab-selector"
+               [ngClass]="currentTabView === 'indigo' ? 'active-tab-title': ''"
+               (click)="tabManager('indigo')">
+            <p class="no-select indigo-tab-title">Индиго</p>
+          </div>
+        </div>
+
+        <div class="palette-tabs">
+          <div class="tab-content" *ngIf="currentTabView === 'red'">
+            <div *ngFor="let color of colors.getColorsByName('red')">
+              <div [ngStyle]="{'background-color': color}"></div>
+            </div>
+          </div>
+          <div class="tab-content" *ngIf="currentTabView === 'pink'">
+            <div *ngFor="let color of colors.getColorsByName('pink')">
+              <div [ngStyle]="{'background-color': color}"></div>
+            </div>
+          </div>
+          <div class="tab-content" *ngIf="currentTabView === 'purple'">
+            <div *ngFor="let color of colors.getColorsByName('purple')">
+              <div [ngStyle]="{'background-color': color}"></div>
+            </div>
+          </div>
+          <div class="tab-content" *ngIf="currentTabView === 'd-purple'">
+
+          </div>
+          <div class="tab-content" *ngIf="currentTabView === 'indigo'">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

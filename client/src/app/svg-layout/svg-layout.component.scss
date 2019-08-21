@@ -1,0 +1,28 @@
+.svg-layout-container {
+  width: 100%;
+  height: auto;
+}
+#app-layout {
+  margin: 5px 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  .main-panel {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .grid-container {
+    @extend .main-panel;
+    grid-template-columns: 130px 1fr;
+    grid-gap: 5px;
+
+    .left-toolbar {
+
+    }
+
+    .svg-layout {
+
+    }
+  }
+}
+

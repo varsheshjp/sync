@@ -1,0 +1,75 @@
+@import "theme";
+
+.default-modal-wrapper {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  z-index: 12;
+  cursor: default;
+
+  .default-modal {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 12;
+
+    .default-modal-title {
+      margin: 5px 5px 5px 5px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+
+      p {
+        margin: 0 5px 0 5px;
+        font-size: large;
+      }
+
+      button {
+        float: right;
+        transition: all 0.5s;
+
+        &:hover {
+          background-color: $modalCloseBtnBgColor;
+          color: $white;
+        }
+      }
+    }
+
+    .horizontal-separator {
+      margin: 0 5px 0 5px;
+      width: auto !important;
+    }
+
+    .default-modal-content {
+      width: 500px;
+      height: auto;
+      padding: 7px 7px 7px 7px;
+    }
+
+    .default-modal-footer {
+      width: 500px;
+      height: auto;
+    }
+  }
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: $rainbowLinearGradient;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background-size: 400%;
+    z-index: 11;
+    animation: animate $borderModalAnimate linear infinite;
+  }
+
+  &:after {
+    filter: blur(8px);
+  }
+}

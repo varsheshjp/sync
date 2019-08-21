@@ -1,0 +1,13 @@
+input.draw-tool-color-picker {
+  width: 47px;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input.draw-tool-size-picker {
+  width: 85px;
+}

@@ -1,0 +1,24 @@
+<div class="main-panel-container">
+  <div class="main-panel-title">
+
+  </div>
+  <div class="main-panel-content">
+    <div class="main-panel-left-row">
+
+    </div>
+    <div class="main-panel-center-row">
+
+    </div>
+    <div class="main-panel-right-row">
+      <button type="button"
+              class="download-picture-btn"
+              (click)="downloadPicture($event)"
+              [disabled]="downloadButtonDisabled">
+        <fa name="download"></fa>
+      </button>
+
+      <button type="button" disabled><fa name="cogs"></fa></button>
+      <button type="button" class="reset-picture-btn" (click)="clearPicture($event)"><fa name="trash"></fa></button>
+    </div>
+  </div>
+</div>
